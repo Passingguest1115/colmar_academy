@@ -1,88 +1,439 @@
-body{
-  margin: 0;
-  font-size: 14px;
-  font-family: "Hind Vadodara";
-  background-color: #F4F4F4;
+html {
+  display: block;
+  font-size: 16px;
+  margin:0;
+  padding:0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: #454545;
+  font-family: "Roboto";
 }
-@font-face {
-  font-family: 'Hind Vadodara';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Hind Vadodara'), local('HindVadodara-Regular'), url(https://fonts.gstatic.com/s/hindvadodara/v2/9c6KKeibr6NtFqknnNxZB8m50xh7hW5sbYCmNlLTrHY.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.flex {
+  display: flex;
 }
 
-@font-face {
-  font-family: 'Hind Vadodara';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Hind Vadodara SemiBold'), local('HindVadodara-SemiBold'), url(https://fonts.gstatic.com/s/hindvadodara/v2/KrZ6f_YevRawHvh0qDBkTaSVz8B3Gj8ppCCOMWTf7Gc.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Biryani Black'), local('Biryani-Black'), url(https://fonts.gstatic.com/s/biryani/v2/zesSxRLKV_fx-Z23Oa-YNwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url(https://fonts.gstatic.com/s/biryani/v2/cJ4Ij9Z_fMLiglmcqwLkfwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-@font-face {
-  font-family: 'Biryani';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Biryani Regular'), local('Biryani-Regular'), url(https://fonts.gstatic.com/s/biryani/v2/y_RpTy_cGK8YkLRjZjCxDALUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-.header{
-  align-items: center;
-  height: 64px;
-  display: flex;
+/* Start flexer Section */
+
+
+nav {
   justify-content: space-between;
-  font-family: Verdana, sans-serif;
 }
-.brand img{
-  height: 50px;
-}
-.colmar{
-  font-size: 32px;
-  font-weight: bold;
-  color: #353535;
-}
-.academy{
-  font-size: 32px;
-  color: #d6d6d6;
-}
-.brand{
-  text-align: left;
-  display: inline-flex;
+.navigation {
+  margin-right: 2rem;
   align-items: center;
-  margin-left: 24px;
 }
-.nav-bar ul{
-  list-style-type: none;
-  text-decoration: none;
-}
-.nav-bar li{
+.navigation ul li {
+  padding: 1.46rem 0.5rem;
   display: inline;
-  font-size: 24px;
-  color: #5d5d5d;
-  text-decoration: none;
-  padding-left: 16px;
 }
-.nav-bar li a{
-  text-decoration: none;
+.container {
+  width: 100%;
+  margin: 0 auto;
 }
-.nav-bar li a:hover, a:visited, a:link, a:active{
-  text-decoration: none;
+.logo img {
+  height: 2.5rem;
 }
-nav{
-  margin: 24px;
-  text-decoration: none;
+#bold {
+  font-weight: 900;
+}
+.logo {
+  align-items: center;
+  margin-left: 1.5rem;
+  font-size: 32px;
+}
+.banner {
+  padding-bottom: 2rem;
+}
+.bannerimg img {
+  width: 100%;
+  height: auto;
+}
+.bannerimg {
+  width: 60%;
+  margin: 6rem 2.5rem 0rem 1.5rem;
+
+}
+.bannerText {
+  line-height: 1.2;
+  flex-direction: column;
+  justify-content: center;
+  width: 29rem;
+  padding-top: 5rem;
+}
+
+
+
+.infoLeft {
+  flex-direction: column;
+  height: auto;
+  margin: 0rem 0rem 0rem 1.5rem;
+  width: 61.5%;
+  border-right: 1px solid #D8D8D8;
+  padding-right: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.infoLeft img {
+  height: auto;
+  width: 100%;
+}
+
+
+.infoRight {
+  flex-direction: column;
+}
+
+.infoArticle img {
+  width: 35%;
+  height: 100%;
+  margin-right: 1rem;
+}
+.infoText {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.courses.flex {
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 58rem;
+  align-self: center;
+}
+.coursetxt {
+  padding: 0 0 1rem 1rem;
+}
+.course {
+  width: 17.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  flex-direction: column;
+  background-color: white;
+  transition: all 100ms ease-in;
+}
+.course img {
+  width: 100%;
+  height: auto;
+}
+.learn {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.thesisLeft img {
+  height: auto;
+
+}
+video {
+  width: 100%;
+  height: auto;
+}
+.thesisRight {
+  flex-direction: column;
+}
+.infoArticle.flex.noborder {
+  border-bottom: none;
+}
+
+.thesisinfoArticle img {
+  width: 35%;
+  height: 100%;
+  margin-right: 1rem;
+}
+.thesisinfoArticle {
+  min-width: 26.4375rem;
+  max-width: 30rem;
+  padding:  1.5rem 0rem 1.5rem 1.5rem;
+}
+footer.container {
+  justify-content: space-between;
+  padding: 0 1.5rem 2.5rem 1.5rem;
+}
+/* Palette Experimentation */
+flexer {
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid rgb(56, 56, 56);
+  margin-top: -10px;
+  padding: 0;
+}
+.banner {
+  background-color: #D8D8D8;
+}
+.info {
+  background-color: #F3F5F5;
+}
+.learn {
+  background-color: #EAEBEC;
+}
+.thesis {
+  background-color: #F3F5F5;
+  flex-direction: column;
+}
+/* Text */
+
+
+
+.bannerText h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.bannerText p {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.infoText a {
+  color: rgb(0, 165, 255);
+}
+.infoText p {
+  margin: 1rem 0;
+  color: #7A7A7A;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.infoLeft p {
+  color: #7A7A7A;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.infoLeft h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.infoText h3 {
+  font-size: 1.3rem;
+}
+.quote {
+  font-style: none;
+  margin: 1rem 0;
+}
+.origin {
+  font-size: .75rem;
+  padding: 1rem 0;
+}
+.coursetxt p {
+    color: #7A7A7A;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-bottom: .5rem;
+}
+.coursestart {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.courseflexer {
+  font-size: 1.3rem;
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.thesisLeft h3 {
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+}
+.thesisLeft p {
+  color: #7A7A7A;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.thesis h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 2rem;
+  padding-bottom: .5rem;
+  text-align: center;
+}
+.footerright p {
+  padding-left: 1rem;
+}
+p.origin {
+  color: #7A7A7A;
+}
+/* Border */
+
+.thesisLeft {
+  flex-direction: column;
+  height: auto;
+  margin: 0rem 0rem 0rem 1.5rem;
+  width: 61.5%;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+}
+.infoArticle {
+  min-width: 26.4375rem;
+  max-width: 30rem;
+  padding: 2rem 0rem 1.5rem 2rem;
+  border-bottom: 1px solid #D8D8D8;
+}
+.gray {
+  color: #7A7A7A;
+}
+
+/* Mobile */
+.mobile {
+  display: none;
+}
+.mobnav {
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+/* Navigation Breakpoint */
+
+
+@media screen and (max-width: 590px) {
+.logo, .navigation , .infoLeft , .courses , .thesisLeft h3 , .thesisLeft p , .thesisRight, .footerright {
+   display: none;
+ }
+.banner {
+  flex-direction: column;
+  align-content: center;
+}
+.bannerimg , .bannerText {
+  width: 100%;
+}
+.banner .bannerimg {
+  margin: 4rem 0 0 0;
+
+}
+.bannerText {
+  padding: 2rem 1rem 0rem 1rem;
+}
+.button {
+  margin: 0 auto;
+}
+ .mobile {
+   display: inherit;
+ }
+ img.mobile {
+   width: 100%;
+ }
+ .infoArticle {
+   flex-direction: column;
+ }
+ .articleImg {
+   display: none;
+ }
+ .infoText h3 {
+   margin-top: 1rem;
+ }
+ .infoText {
+   margin-left: 1rem;
+ }
+.mobcourses {
+  flex-direction: column;
+  margin: 0 1rem 1rem 1rem;
+}
+ .mobspan {
+   background-color: #D8D8D8;
+   padding: 1rem 0 1rem 1rem;
+   margin-bottom: .5rem;
+   text-align: left;
+   font-size: 1.3rem;
+ }
+ .thesisLeft {
+   width: 100%;
+ }
+ .thesisinfoArticle {
+   flex-direction: column;
+ }
+
+}
+
+/*Tablet */
+@media screen and (max-width: 768px) {
+  .courses.flex {
+    width: 38rem;
+  }
+  .banner {
+    flex-direction: column;
+    align-content: center;
+  }
+  .bannerimg , .bannerText {
+    width: 100%;
+  }
+  .banner .bannerimg {
+    margin: 4rem 0 0 0;
+
+  }
+  .bannerText {
+    padding: 2rem 1rem 0rem 1rem;
+    text-align: center;
+  }
+  .button {
+    margin: 0 auto;
+  }
+}
+
+.infoArticle:hover {
+  background-color: #dee0e2;
+  transition: background-color 100ms ease-in-out,
+    color 100ms linear;
+}
+.thesisinfoArticle:hover {
+  background-color: #dee0e2;
+  transition: background-color 100ms ease-in-out,
+    color 100ms linear;
+}
+.bannerText .button:hover {
+  background-color: #717171;
+  color: white;
+  transition: background-color 500ms linear,
+    color 500ms linear;
+}
+
+.bannerText .button:active {
+  background-color: #1c91c7;
+  color: white;
+  transition: none;
+}
+.navigation ul li:hover {
+  background-color: #5d5d5d ;
+  color: white;
+  transition: background-color 200ms ease-in-out,
+    color 200ms linear;
+}
+
+.navigation ul li:active {
+  background-color: #008bd1;
+  transition: none;
+}
+.bannerText .button {
+  padding: 1rem;
+  background-color: #353535;
+  color: white;
+  text-align: center;
+  margin-top: 1.5rem;
+  width: 88%;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.course:hover {
+  transform: scale(1.025);
+  box-shadow: -3px 2.5px 4.5px 0px #8a8a8a;
 }
