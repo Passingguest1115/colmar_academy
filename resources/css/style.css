@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: "Hind Vadodara";
+  background-color: #F4F4F4;
+}
+@font-face {
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Vadodara'), local('HindVadodara-Regular'), url(https://fonts.gstatic.com/s/hindvadodara/v2/9c6KKeibr6NtFqknnNxZB8m50xh7hW5sbYCmNlLTrHY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind Vadodara SemiBold'), local('HindVadodara-SemiBold'), url(https://fonts.gstatic.com/s/hindvadodara/v2/KrZ6f_YevRawHvh0qDBkTaSVz8B3Gj8ppCCOMWTf7Gc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Biryani Black'), local('Biryani-Black'), url(https://fonts.gstatic.com/s/biryani/v2/zesSxRLKV_fx-Z23Oa-YNwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url(https://fonts.gstatic.com/s/biryani/v2/cJ4Ij9Z_fMLiglmcqwLkfwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Biryani Regular'), local('Biryani-Regular'), url(https://fonts.gstatic.com/s/biryani/v2/y_RpTy_cGK8YkLRjZjCxDALUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+.header{
+  align-items: center;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Verdana, sans-serif;
+}
+.brand img{
+  height: 50px;
+}
+.colmar{
+  font-size: 32px;
+  font-weight: bold;
+  color: #353535;
+}
+.academy{
+  font-size: 32px;
+  color: #d6d6d6;
+}
+.brand{
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+.nav-bar ul{
+  list-style-type: none;
+  text-decoration: none;
+}
+.nav-bar li{
+  display: inline;
+  font-size: 24px;
+  color: #5d5d5d;
+  text-decoration: none;
+  padding-left: 16px;
+}
+.nav-bar li a{
+  text-decoration: none;
+}
+.nav-bar li a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+}
+nav{
+  margin: 24px;
+  text-decoration: none;
+}
