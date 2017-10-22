@@ -22,7 +22,6 @@ a {
 }
 .flex {
   display: flex;
-
 }
 
 /* Start flexer Section */
@@ -31,11 +30,11 @@ a {
 nav {
   justify-content: space-between;
 }
-.nav {
+.navbar {
   margin-right: 24px;
   align-items: center;
 }
-.nav ul li {
+.navbar ul li {
   padding: 0 8px;
   display: inline;
 }
@@ -179,14 +178,14 @@ flexer {
   z-index: 1;
   background-color: white;
   border-bottom: 1px solid rgb(56, 56, 56);
-  margin-top: -5px;
+  margin-top: -10px;
   padding: 0;
 }
 .banner {
   background-color: #D8D8D8;
 }
 .info {
-  background-color: #F3F5F5;
+  background-color: #ffffff;
 }
 .curriculum {
   background-color: #EAEBEC;
@@ -305,7 +304,7 @@ p.origin {
 .mobile {
   display: none;
 }
-.mobile-nav {
+.mobile-navbar {
   justify-content: space-around;
   flex-grow: 1;
 }
@@ -314,7 +313,7 @@ p.origin {
 
 
 @media screen and (max-width: 590px) {
-.logo, .nav , .infoLeft , .courses , .thesisLeft h3 , .thesisLeft p , .thesisRight, .footerright {
+.logo, .navbar , .infoLeft , .courses , .thesisLeft h3 , .thesisLeft p , .thesisRight, .footerright {
    display: none;
  }
 .banner {
@@ -341,14 +340,15 @@ p.origin {
  }
  .infobox {
    width: 100%;
-   min-width: 590px;
+   min-width: 550px;
    flex-direction: column;
    border: none;
  }
  .infobox img{
    padding: 16px;
    flex-direction: row;
-   max-width: 520px;
+   max-width: 500px;
+   align-items: center;
  }
  .boxImg {
    display: none;
@@ -428,14 +428,14 @@ p.origin {
   color: white;
   transition: none;
 }
-.nav ul li:hover {
+.navbar ul li:hover {
   background-color: #5d5d5d ;
   color: white;
   transition: background-color 200ms ease-in-out,
     color 200ms linear;
 }
 
-.nav ul li:active {
+.navbar ul li:active {
   background-color: #008bd1;
   transition: none;
 }
