@@ -22,6 +22,7 @@ a {
 }
 .flex {
   display: flex;
+
 }
 
 /* Start flexer Section */
@@ -30,11 +31,11 @@ a {
 nav {
   justify-content: space-between;
 }
-.navigation {
+.nav {
   margin-right: 24px;
   align-items: center;
 }
-.navigation ul li {
+.nav ul li {
   padding: 0 8px;
   display: inline;
 }
@@ -313,7 +314,7 @@ p.origin {
 
 
 @media screen and (max-width: 590px) {
-.logo, .navigation , .infoLeft , .courses , .thesisLeft h3 , .thesisLeft p , .thesisRight, .footerright {
+.logo, .nav , .infoLeft , .courses , .thesisLeft h3 , .thesisLeft p , .thesisRight, .footerright {
    display: none;
  }
 .banner {
@@ -427,14 +428,14 @@ p.origin {
   color: white;
   transition: none;
 }
-.navigation ul li:hover {
+.nav ul li:hover {
   background-color: #5d5d5d ;
   color: white;
   transition: background-color 200ms ease-in-out,
     color 200ms linear;
 }
 
-.navigation ul li:active {
+.nav ul li:active {
   background-color: #008bd1;
   transition: none;
 }
