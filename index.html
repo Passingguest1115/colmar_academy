@@ -3,6 +3,7 @@
   <flex>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
+    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
     <link href="resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   </flex>
@@ -14,8 +15,8 @@
       <nav class="container flex">
         <div class="logo flex">
           <img src="resources/css/ic-logo.svg" alt="Colmar Academy Logo">
-          <span id="bold">COLMAR</span>
-          <span class="gray">ACADEMY</span>
+          <span id="colmar">COLMAR</span>
+          <span class="academy">ACADEMY</span>
         </div>
         <div class="navigation flex">
           <ul>
@@ -25,7 +26,7 @@
             <li><a href="#">Sign In</a></li>
           </ul>
         </div>
-        <div class="mobile mobnav flex">
+        <div class="mobile mobile-nav flex">
           <img src="resources/css/ic-logo.svg" alt="">
           <img src="resources/css/ic-on-campus.svg" alt="">
           <img src="resources/css/ic-online.svg" alt="">
@@ -55,14 +56,14 @@
 
       <div class="info container flex">
         <div class="infoLeft flex">
-          <img src="resources/css/information-main.jpg" alt="Outdoor reading">
+          <img src="resources/css/information-main.jpg" alt="Student reading">
           <h3>It doesn't hurt to keep practicing</h3>
           <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
           <p class="origin">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
         <div class="infoRight flex">
-          <div class="infoArticle flex">
-            <img class="articleImg" src="resources/css/information-orientation.jpg"  alt="Walking students arial">
+          <div class="infobox flex">
+            <img class="boxImg" src="resources/css/information-orientation.jpg"  alt="Walking students arial">
             <img class ="mobile" src="resources/css/information-orientation-mobile.jpg" alt="Walking students arial">
             <div class="infoText flex">
               <h3>Orientation date</h3>
@@ -70,20 +71,20 @@
               <a href="#">Read more</a>
             </div>
           </div>
-          <div class="infoArticle flex">
-            <img src="resources/css/information-campus.jpg" class="articleImg" alt="Lecture Room">
+          <div class="infobox flex">
+            <img src="resources/css/information-campus.jpg" class="boxImg" alt="Lecture Room">
             <img class="mobile" src="resources/css/information-campus-mobile.jpg" alt="Lecture Room">
             <div class="infoText flex">
-              <h3>Our Campus</h3>
+              <h3>Our campus</h3>
               <p>Find out which campus is close by you</p>
               <a href="#">Read more</a>
             </div>
           </div>
-          <div class="infoArticle flex">
-            <img src="resources/css/information-guest-lecture.jpg" class="articleImg" alt="Oliver Sack">
+          <div class="infobox flex">
+            <img src="resources/css/information-guest-lecture.jpg" class="boxImg" alt="Oliver Sack">
             <img class="mobile" src="resources/css/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
             <div class="infoText flex">
-              <h3>Guest Lecture</h3>
+              <h3>Our guest lecture</h3>
               <p>Join a keynote with Oliver Sack about music in medical treatment</p>
               <a href="#">Read more</a>
             </div>
@@ -91,21 +92,21 @@
         </div>
       </div>
 
-      <!-- LEARN SECTION -->
+      <!-- Curriculum SECTION -->
 
-      <div class="learn container flex">
-        <h3 class="coursestart">Start Learning</h3>
+      <div class="curriculum container flex">
+        <h3 class="coursestart">Start learning</h3>
         <div class="courses flex">
           <div class="course flex">
             <img src="resources/css/course-software.jpg" alt="Desktop Monitors">
             <div class="coursetxt">
-            <h3 class="courseflexer">Software Engineering</h3>
+            <h3 class="courseflexer">Software engineering</h3>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
           </div>
           </div>
           <div class="course flex">
-            <img src="resources/css/course-computer-art.jpg" alt="Mobile Phone Screen">
+            <img src="resources/css/course-computer-art.jpg" alt="Phone Screen">
             <div class="coursetxt">
               <h3 class="courseflexer">Computer art</h3>
               <p>COURSES</p>
@@ -114,7 +115,7 @@
         </div>
 
         <div class="course flex">
-          <img src="resources/css/course-design.jpg" alt="Man Holding Camera">
+          <img src="resources/css/course-design.jpg" alt="Photographer">
           <div class="coursetxt">
             <h3 class="courseflexer">Design</h3>
             <p>COURSES</p>
@@ -123,7 +124,7 @@
       </div>
 
       <div class="course flex">
-        <img src="resources/css/course-data.jpg" alt="Laptop Screen Displaying Analytics">
+        <img src="resources/css/course-data.jpg" alt="Laptop Screen">
         <div class="coursetxt">
           <h3 class="courseflexer">Data</h3>
           <p>COURSES</p>
@@ -143,19 +144,19 @@
       <div class="course flex">
         <img src="resources/css/course-marketing.jpg" alt="Woman Using Smart Watch">
         <div class="coursetxt">
-          <h3 class="courseflexer">Computer art</h3>
+          <h3 class="courseflexer">Marketing</h3>
           <p>COURSES</p>
           <p>Analytics, Content Marketing, Mobile Marketing</p>
         </div>
       </div>
       </div>
-      <div class="mobcourses flex mobile">
-        <span class="mobspan">Software engineering</span>
-        <span class="mobspan">Computer art</span>
-        <span class="mobspan">Design</span>
-        <span class="mobspan">Data</span>
-        <span class="mobspan">Business</span>
-        <span class="mobspan">Marketing</span>
+      <div class="mobile-course flex mobile">
+        <span class="mobile-block">Software engineering</span>
+        <span class="mobile-block">Computer art</span>
+        <span class="mobile-block">Design</span>
+        <span class="mobile-block">Data</span>
+        <span class="mobile-block">Business</span>
+        <span class="mobile-block">Marketing</span>
       </div>
     </div>
 
@@ -167,19 +168,19 @@
         <div class="thesisLeft flex">
         <video src="resources/css/thesis.mp4" controls="true"></video>
         <h3>Reimagine urban</h3>
-        <p class=>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
       </div>
       <div class="thesisRight flex">
-        <div class="thesisinfoArticle flex">
-          <img src="resources/css/thesis-fisma.jpg" class="articleImg" alt="Smartphone Resting on Table">
+        <div class="thesisinfobox flex">
+          <img src="resources/css/thesis-fisma.jpg" class="boxImg" alt="Smartphone on Table">
           <!--Mobile <img src="./resources/images/information-orientation-mobile.jpg" alt="Walking students arial" class="mobileImg"> -->
           <div class="infoText flex">
             <h3>Fisma: Design</h3>
             <p>Designer showcase of new prototype product</p>
           </div>
         </div>
-        <div class="thesisinfoArticle flex">
-          <img src="resources/css/thesis-now-and-then.jpg" class="articleImg" alt="New York Skyline">
+        <div class="thesisinfobox flex">
+          <img src="resources/css/thesis-now-and-then.jpg" class="boxImg" alt="New York Skyline">
           <!--Mobile <img src="./resources/images/information-campus-mobile.jpg" alt="Walking students arial" class="mobileImg"> -->
           <div class="infoText flex">
             <h3>Now and then</h3>
